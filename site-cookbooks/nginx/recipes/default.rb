@@ -11,5 +11,5 @@ package "nginx" do
 end
 
 service "nginx" do
-  action { :enable, :start }
+  action [ :enable, :start ]
 end
