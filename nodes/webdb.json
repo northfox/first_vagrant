@@ -1,7 +1,9 @@
 {
     "run_list": [
         "recipe[yum-epel]",
-        "recipe[nginx]"
+        "recipe[nginx]",
+        "recipe[git]",
+        "recipe[ntp]"
     ],
     "automatic" : {
         "ipaddress": "webdb"
