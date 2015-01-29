@@ -22,7 +22,7 @@ host = ENV['TARGET_HOST']
 config = Tempfile.new('', Dir.tmpdir)
 `vagrant ssh-config #{host} > #{config.path}`
 
-options = Net::SSH::Config.for(host, [config.path])
+options = Net::SSH::Config.for(c.host, files=["vagrant-ssh.conf"])
 
 options[:user] ||= Etc.getlogin
 
