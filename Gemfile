@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
-gem 'serverspec'
+gem 'bundler'
 gem 'rake'
+gem 'serverspec'
 gem 'knife-solo'
 gem 'guard'
 gem 'guard-rspec'
